@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+echo "=========================================="
+echo "Starting postBuild script"
+echo "=========================================="
+
+# Make install.sh executable
+chmod +x /home/jovyan/install.sh 2>/dev/null || true
+
+# Run the installer
+bash /home/jovyan/install.sh
+
+echo "=========================================="
+echo "postBuild script complete"
+echo "=========================================="
