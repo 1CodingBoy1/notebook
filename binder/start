@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Starting freeroot environment..."
+cd /tmp/freeroot 2>/dev/null && bash root.sh || echo "Freeroot not found"
+exec /bin/bash
